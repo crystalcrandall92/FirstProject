@@ -27,7 +27,7 @@ function getWeather(citySearch) {
     })
       .then(function (response) {
         console.log(response);
-  
+        $('#cityWeather').empty();
         // City Name, Weather Icon, Temperature, Humidity, Wind Speed, UV Index
   
         var cityName = $("<div>");
@@ -71,6 +71,7 @@ function searchCity(citySearch, stateSearch) {
     })
         .then(function (response) {
             console.log(response);
+            $('#beerFinder').empty();
 
             for (var i = 0; i < response.length; i++) {
                 beerList(response[i].name, response[i].street, response[i].city, response[i].state, response[i].website_url, response[i].phone)
@@ -81,7 +82,7 @@ function searchCity(citySearch, stateSearch) {
 
 function beerList(name, street, city, state, website_url, phone) {
     var breweryName = $("<div>");
-    breweryName.addClass("card blue-grey light-1").text("Name: " + name)
+    breweryName.addClass("card").text("Name: " + name)
     $("#beerFinder").append(breweryName)
 
     var streetName = $("<div>");
@@ -105,3 +106,4 @@ function beerList(name, street, city, state, website_url, phone) {
     $("#beerFinder").append(breweryPhone)
 
 }
+
