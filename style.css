@@ -1,13 +1,19 @@
-h1 {
-    padding: 20px 0;
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #eee;
-    text-align: center;
-    background: #333;
+body {
+    background-color: white;
 }
 
 .p1 {
     text-align: center;
+}
+
+.nav-wrapper {
+    background-color:  rgb(38, 166, 154);
+}
+
+.card {
+    background-color:  rgb(38, 166, 154);
+}
+
+.card-content {
+    background-color: white;
 }
