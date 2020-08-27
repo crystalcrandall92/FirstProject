@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <h1>Find your new favorite brewery!</h1>
+    <h2>Find your new favorite brewery!</h2>
     <div class="p1">
         <p>Getting tired of your average joe beer? Looking to spice it up for the evening or go out for the afternoon?
             Let's start off the search with your city and state, we're going to find your favorite new spot!</p>
@@ -25,7 +25,7 @@
                         <input id="citySearch" type="text" class="validate">
                         <label for="city">City</label>
                     </div>
-                    <div id="cityWeather" class="col"></div>
+                    <div id="cityWeather" class="col s5 center"></div>
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
@@ -39,9 +39,13 @@
     </div>
     <div id="beerContainer">
         <div class="row">
-        <div id="beerFinder" class="col s7 offset-s2"></div>
+            <div class="col s7 offset-s2">
+        <div id="beerFinder"></div>
+        </div>
         </div>
     </div>
+<!-- CDN example (unpkg) -->
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="script.js"></script>
