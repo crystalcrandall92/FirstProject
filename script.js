@@ -1,5 +1,10 @@
 var APIKey = "&appid=e3ef58b786bc1cbed4ae1585e495bb1b";
 
+console.log(dayjs())
+
+today = dayjs().format('MMM DD')
+console.log(today)
+
 $("#searchBtn").on("click", function () {
     var citySearch = $("#citySearch").val();
     $("#citySearch").val("");
@@ -46,6 +51,13 @@ function getWeather(citySearch) {
         var windSpeed = $("<div>");
         windSpeed.text("Wind Speed: " + response.wind.speed + "mph")
         $("#cityWeather").append(windSpeed)
+
+        var today = $("<div>");
+        today.text(dayjs().format('MMM DD'))
+        $("#cityWeather").append(today)
+
+        var time = dayjs().format('hh mm A')
+        $("#cityWeather").append(time)
       })
   }
 
@@ -69,7 +81,7 @@ function searchCity(citySearch, stateSearch) {
 
 function beerList(name, street, city, state, website_url, phone) {
     var breweryName = $("<div>");
-    breweryName.text("Name: " + name)
+    breweryName.addClass("card blue-grey light-1").text("Name: " + name)
     $("#beerFinder").append(breweryName)
 
     var streetName = $("<div>");
