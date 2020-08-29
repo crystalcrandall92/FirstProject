@@ -90,15 +90,15 @@ function beerList(name, street, city, state, website_url, phone) {
     $("#beerFinder").append(streetName)
 
     var breweryCity = $("<div>");
-    breweryCity.text(city)
+    breweryCity.text(city + ", " + state)
     $("#beerFinder").append(breweryCity)
 
-    var breweryState = $("<div>");
-    breweryState.text(state)
-    $("#beerFinder").append(breweryState)
+    // var breweryState = $("<div>");
+    // breweryState.text(state)
+    // $("#beerFinder").append(breweryState)
 
     var breweryURL = $("<div>");
-    breweryURL.text(website_url)
+    breweryURL.html(website_url)
     $("#beerFinder").append(breweryURL)
 
     var breweryPhone = $("<div>");
@@ -106,4 +106,3 @@ function beerList(name, street, city, state, website_url, phone) {
     $("#beerFinder").append(breweryPhone)
 
 }
-
