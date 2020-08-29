@@ -98,7 +98,11 @@ function beerList(name, street, city, state, website_url, phone) {
     // $("#beerFinder").append(breweryState)
 
     var breweryURL = $("<div>");
-    breweryURL.html(website_url)
+    var breweryHREF = $("<a>")
+    breweryHREF.attr("href", website_url)
+    breweryHREF.text(website_url)
+    breweryURL.append(breweryHREF)
+    // breweryURL.html(website_url)
     $("#beerFinder").append(breweryURL)
 
     var breweryPhone = $("<div>");
