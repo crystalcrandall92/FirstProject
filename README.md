@@ -12,5 +12,5 @@ User Story:
   Repository: https://github.com/jameslee70/FirstProject
   Deployed app: https://jameslee70.github.io/FirstProject/
   
-  ![example](project 1.PNG)
+  ![example](project1.jpg)
   
