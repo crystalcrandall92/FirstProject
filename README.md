@@ -8,4 +8,6 @@ User Story:
 	As a customer, I want to be able to access the address of my local breweries. 
   As a customer, I want to be able to have access to the websites of my local breweries. 
   
-  
+  Links:
+  Repository: https://github.com/jameslee70/FirstProject
+  Deployed app: https://jameslee70.github.io/FirstProject/
